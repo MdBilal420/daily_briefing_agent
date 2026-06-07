@@ -26,13 +26,13 @@ Explicit links between your notes and the news. Only include a connection if the
 Concrete things worth doing today, drawn directly from notes or news."""
 
 
-def generate_briefing(context: str) -> str:
+def generate_briefing(context: str, config: dict) -> str:
     client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
     user_message = f"Here is today's context:\n\n{context}\n\nGenerate today's briefing for {date.today()}."
 
     message = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=1024,
+        model=config["model"],
+        max_tokens=config["max-tokens"],
         system=SYSTEM_PROMPT,
         messages=[
             {"role": "user", "content": user_message}
