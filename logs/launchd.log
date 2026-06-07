@@ -1,0 +1,124 @@
+Briefing written to briefings/2026-06-07.md
+# Daily Briefing — Sunday, 2026-06-07
+
+## Notes Summary
+
+You've got three active areas in motion:
+
+**Social media cadence** [NOTE-1]: You're posting on LinkedIn twice weekly 
+(Tue/Thu mornings) with a monthly lesson thread, and keeping X replies to 
+weekdays only. You've got a draft ready on shipping daily briefings with agents,
+plus a 60-second screen recording clip to turn into Reels/Shorts later. Three 
+quote-tweets are queued and scheduled.
+
+**AI infrastructure** [NOTE-2]: You're building a small eval set (20 prompts) to
+track faithfulness and citation rates for your briefing summarizer. You're 
+testing `gpt-4.1-mini` vs local models with an 8-second latency budget, and 
+planning to log token usage by section. Your briefing agent should stay 
+read-mostly with under 12 tools, and you're chunking personal notes at ~400 
+tokens with metadata boosts for recency (last 7 days, cap 5 chunks).
+
+**Football** [NOTE-3]: Arsenal–Chelsea is Saturday 17:30; you'll need lineups 
+about an hour before. You're leaning Haaland as captain if City are home. More 
+immediately: **5-a-side at 10:00 today** — bring bibs, water, studs are OK on 
+the astro pitch. Your knee was tight after the last game, so skip slide tackles 
+this week and stretch calves/hamstrings.
+
+## News Summary
+
+**Startups & ethics:** Paul Graham flagged that one of his portfolio companies 
+has "genuine benevolence" as a secret weapon [ARTICLE-1]. On investor behavior, 
+Y Combinator's reputation system works: bad investors get poor reviews and 
+filtered out of demo days, creating a night-and-day difference in how founders 
+are treated compared to non-YC fundraising [ARTICLE-2]. Graham also pushed back 
+on the "exploit people to get rich" narrative, suggesting YC has spent 20 years 
+choosing the wrong founders if that were true [ARTICLE-5].
+
+**Climate & policy:** The Trump administration is pulling a working $368 million
+ocean monitoring system out of the water — equipment already built and deployed 
+— right as ocean temperatures hit records and Atlantic currents show signs of 
+collapse. Framed as "nimble efficiency," critics call it smashing gauges while 
+the engine burns [ARTICLE-3]. Graham also noted universities are pricing 
+themselves out while becoming less necessary [ARTICLE-4].
+
+**AI policy & products:** Sriram Krishnan is leaving his White House AI advisor 
+role to start a new institution shaping Trump's AI policy [ARTICLE-13]. The 
+Trump administration is considering taking an equity stake in OpenAI, with Trump
+saying deals should let "the American people benefit from the success of AI" 
+[ARTICLE-14]. On the product side, OpenAI unveiled Lockdown Mode to reduce 
+prompt injection vulnerabilities around sensitive data [ARTICLE-11].
+
+**World Cup preview:** The 2026 World Cup is almost here. Messi is sitting out 
+Argentina's pre-tournament friendly due to hamstring strain; his availability 
+for the tournament depends on "clinical and functional progress" [ARTICLE-10]. 
+Coverage focuses on favorites, surprise contenders, and star players to watch 
+[ARTICLES-6, 7, 8, 9] — all title-only, so details are thin.
+
+**Apple & social apps:** WWDC 2026 is coming with a Siri revamp and Apple 
+Intelligence updates [ARTICLE-12]. A separate piece highlights next-generation 
+social apps as alternatives to Instagram's feed model [ARTICLE-15] — title only,
+no detail.
+
+## Connections
+
+Your daily briefing agent setup [NOTE-2] sits nicely between the AI 
+infrastructure trend (Lockdown Mode, prompt injection concerns [ARTICLE-11]) and
+your own citation-faithfulness evals. The eval set you're building directly 
+addresses the kind of robustness thinking that Lockdown Mode tackles.
+
+Paul Graham's point about Y Combinator filtering bad actors [ARTICLE-2] mirrors 
+your own system design: you're building agents that are "read-mostly" with 
+confirmation before writes [NOTE-2], creating a natural check against unintended
+consequences — not unlike how YC's reputation system checks investor behavior.
+
+Your social media backlog includes a post about "shipping daily briefings with 
+agents" [NOTE-1]. The news around AI policy and OpenAI equity stakes 
+[ARTICLE-14] and Krishnan's move [ARTICLE-13] are exactly the kind of context 
+your audience (founders, builders) will care about — worth keeping an eye on for
+future threads.
+
+## Action Items
+
+- **This morning:** Stretch calves and hamstrings before 10:00 kickoff; pack 
+bibs and water for 5-a-side. Skip slide tackles. [NOTE-3]
+
+- **Before Tuesday/Thursday:** Finalize the "shipping daily briefings with 
+agents" post (hook + 3 bullets + CTA to repo) [NOTE-1]; record the 60s screen 
+clip for Reels/Shorts.
+
+- **Before Saturday 16:30:** Check lineups for Arsenal–Chelsea [NOTE-3].
+
+- **This week:** Log token usage by section in your briefing runs and validate 
+your 20-prompt eval set on faithfulness + citation rate [NOTE-2].
+
+- **Consider:** Your Q3 social/AI content calendar could lean into the Sriram 
+Krishnan / OpenAI equity news — "what White House AI policy means for builders" 
+— but only if you have a clean take [ARTICLE-13, ARTICLE-14].
+
+## Sources
+- [ARTICLE-1] (https://x.com/paulg/status/2063407597416485313)
+- [ARTICLE-2] (https://x.com/contextconor/status/2063367306814902528)
+- [ARTICLE-3] (https://x.com/MikeLevin/status/2063308877442015234)
+- [ARTICLE-4] (https://x.com/paulg/status/2063248116477010390)
+- [ARTICLE-5] (https://x.com/paulg/status/2063246591964958747)
+- [ARTICLE-10] [Messi sits out Argentina’s pre-World Cup friendly due to 
+hamstring 
+strain](https://www.aljazeera.com/sports/2026/6/7/messi-sits-out-argentinas-pre-
+world-cup-friendly-due-to-hamstring-strain)
+- [ARTICLE-11] [OpenAI unveils Lockdown Mode to protect sensitive data from 
+prompt injection 
+attacks](https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-prote
+ct-sensitive-data-from-prompt-injection-attacks/)
+- [ARTICLE-12] [What to expect from WWDC 2026: Siri’s highly anticipated revamp 
+and Apple Intelligence 
+updates](https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-h
+ighly-anticipated-revamp-and-apple-intelligence-updates/)
+- [ARTICLE-13] [Sriram Krishnan is leaving his role as White House AI 
+advisor](https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-a
+s-white-house-ai-advisor/)
+- [ARTICLE-14] [The Trump administration might take an equity stake in 
+OpenAI](https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an
+-equity-stake-in-openai/)
+- [ARTICLE-15] [Beyond Instagram: Introducing the next generation of social 
+apps](https://techcrunch.com/2026/06/06/beyond-instagram-introducing-the-next-ge
+neration-of-social-apps/)
