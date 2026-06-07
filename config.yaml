@@ -1,0 +1,11 @@
+
+rss-feeds:
+  - name: "X (Twitter) - Paul Graham"
+    url: "https://rss.app/feeds/ymbYT031f8PVLjKB.xml"
+  - name: "Football World Cup"
+    url: "https://rss.app/feeds/tVuIIreGSqurVMUq.xml"
+  - name: "Startup TechCrunch"
+    url: "https://techcrunch.com/feed/"
+max-articles: 5
+max-note-chars: 1000
+max-summary-chars: 500
