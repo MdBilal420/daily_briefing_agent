@@ -122,3 +122,116 @@ OpenAI](https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an
 - [ARTICLE-15] [Beyond Instagram: Introducing the next generation of social 
 apps](https://techcrunch.com/2026/06/06/beyond-instagram-introducing-the-next-ge
 neration-of-social-apps/)
+Briefing written to briefings/2026-06-08.md
+## Notes Summary
+
+You've got three active areas in motion [NOTE-1, NOTE-2, NOTE-3]:
+
+**Social media:** Your posting rhythm is 2×/week on LinkedIn (Tue/Thu mornings) 
+with a monthly "lesson learned" thread, X replies weekdays only [NOTE-1]. You 
+have a draft ready on shipping daily briefings with agents, plus a 60-second 
+clip idea for Reels/Shorts [NOTE-1]. An interesting meta-idea: your morning 
+brief could surface "posts due today" if tagged `social` [NOTE-1].
+
+**AI work:** You're building a small evaluation set (20 prompts) to track 
+faithfulness and citation accuracy for your briefing summarizer, comparing 
+`gpt-4.1-mini` vs a local model within an ~8s latency budget [NOTE-2]. Your RAG 
+system for personal notes is shaping up—chunking at ~400 tokens, boosting recent
+content (last 7 days), capping retrieval at 5 chunks [NOTE-2]. The briefing 
+agent itself should be read-mostly (no writes without confirmation) and stay 
+under ~12 tools to avoid context bloat [NOTE-2].
+
+**Football:** Arsenal vs Chelsea kicks off Saturday 17:30 with lineups needed 
+~1h before [NOTE-3]. Fantasy captain call is Haaland over Saka if City plays at 
+home [NOTE-3]. Your 5-a-side is Sunday 10:00 on astro—bring bibs and water, but 
+skip slide tackles this week because your knee felt tight after the last game 
+[NOTE-3].
+
+## News Summary
+
+**Politics & cities:** San Francisco's center-left candidates swept Tuesday's 
+primary, a contrast to Seattle's trajectory [ARTICLE-1]. Paul Graham notes SF 
+has built grassroots infrastructure that counters progressive activism in ways 
+Seattle hasn't matched yet [ARTICLE-1].
+
+**Startup thinking:** Graham's heuristic for AI-proofing a startup: build 
+something human intelligence also can't compete with (e.g., marketplaces) 
+[ARTICLE-2]. On valuation math, he suggests founders underestimate their odds—a 
+1-in-400 chance with a 10B upside from a 25M cap is "a good bet" [ARTICLE-4]. 
+And on positioning: ideally you're dismissed as "right" by the far left and 
+"left" by the far right—necessary (though not sufficient) for getting things 
+right [ARTICLE-5].
+
+**AI/tech:** Token price increases likely as big AI companies plan public 
+offerings [ARTICLE-11]. Notion restored access after an Anthropic service 
+disruption; their product head was surprised by the retweet volume [ARTICLE-12].
+OpenAI is still developing a "super app"; one senior employee declared "chat is 
+dead" [ARTICLE-13]. Data breaches remain brutal—DOGE, energy/water systems, and 
+an FBI surveillance system have all been hit in 2026 [ARTICLE-15].
+
+**World Cup (2026, happening now):** Excitement building in Santa Clara and 
+Sacramento with local pick-up matches [ARTICLE-6, ARTICLE-8]. Scottish 
+midfielder Cameron Devlin is deferring his Hearts future until after the 
+tournament [ARTICLE-7]. A major complaint from international fans: US travel 
+bans and visa restrictions are making them feel excluded [ARTICLE-9]. A cancer 
+survivor from Massachusetts will serve as flag bearer at Foxboro [ARTICLE-10].
+
+## Connections
+
+Your notes on AI evals and the briefing agent [NOTE-2] sit neatly alongside the 
+broader startup conversation about AI-proofing [ARTICLE-2]: you're building 
+evaluation infrastructure (faithful summaries, proper citations) that proves 
+your work isn't easily replicable by competitors or commoditized models.
+
+Graham's point about valuation math [ARTICLE-4] resonates with how you're 
+framing cost-benefit: you're choosing `gpt-4.1-mini` vs local models partly on 
+latency and cost trade-offs, which is exactly the kind of probability-weighted 
+decision he's describing.
+
+Your social media idea to surface "posts due today" from tagged notes [NOTE-1] 
+is a concrete example of the RAG + tagging system you're building 
+[NOTE-2]—you're literally eating your own dog food.
+
+## Action Items
+
+- **Today or tomorrow:** Finalize the "how we ship daily briefings with agents" 
+draft and schedule for Thursday AM LinkedIn post (Tue/Thu cadence) [NOTE-1]. 
+Confirm the 60s clip is recorded and captioned.
+
+- **Before Sunday 10:00:** Do calf and hamstring stretches; avoid slide tackles 
+during your 5-a-side [NOTE-3].
+
+- **This week:** Log token usage per briefing section (news vs calendar vs 
+notes) and run your first evals on the golden set of 20 prompts to get a 
+baseline on faithfulness + citation rate [NOTE-2].
+
+- **Backlog:** Queue 3 quote-tweets of AI eval posts for weekday scheduling 
+rather than live-posting [NOTE-1].
+
+## Sources
+- [ARTICLE-1] (https://x.com/paulg/status/2063785244776398893)
+- [ARTICLE-2] (https://x.com/paulg/status/2063776645895311863)
+- [ARTICLE-4] (https://x.com/paulg/status/2063644836981260638)
+- [ARTICLE-5] (https://x.com/paulg/status/2063642918028472486)
+- [ARTICLE-7] [Devlin puts Hearts future on the back burner during World 
+Cup](https://www.espn.com/soccer/story/_/id/48995989/fifa-world-cup-australia-de
+vlin-puts-hearts-future-back-burner-world-cup)
+- [ARTICLE-9] ['A World Cup for them not us': Fans' anger at US travel bans and 
+visa restrictions](https://www.bbc.com/news/articles/cx212p8r28eo)
+- [ARTICLE-10] [Cancer survivor from Massachusetts to serve as flag bearer 
+during World Cup in 
+Foxboro](https://www.cbsnews.com/boston/news/world-cup-flag-bearer-boston-stadiu
+m/)
+- [ARTICLE-11] [Is this the dawn of the 
+Tokenpocalypse?](https://techcrunch.com/2026/06/07/is-this-the-dawn-of-the-token
+pocalypse/)
+- [ARTICLE-12] [Notion restores access to Anthropic after service 
+disruption](https://techcrunch.com/2026/06/07/notion-restores-access-to-anthropi
+c-after-service-disruption/)
+- [ARTICLE-13] [OpenAI is still working on that ‘super 
+app’](https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-ap
+p/)
+- [ARTICLE-15] [Hacked, leaked, and held for ransom: the worst breaches of 2026 
+so 
+far](https://techcrunch.com/2026/06/07/the-worst-hacks-and-breaches-of-2026-so-f
+ar/)
